@@ -3,7 +3,9 @@
 Following along with Maximilian Schwarzmüller's React - The Complete Guide 2023 (incl. React Router & Redux) Udemy course
 
 useState - most commonly used React hook for updating the state within a component
+
 useEffect - a React hook that is often used for API calls - you are able to control when this hook is called through dependencies
+
 useReducer - 
 useContext - 
 useRef - 
