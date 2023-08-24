@@ -2,13 +2,15 @@
 
 Following along with Maximilian Schwarzmüller's React - The Complete Guide 2023 (incl. React Router & Redux) Udemy course
 
-useState - most commonly used React hook for updating the state within a component
+useState is a fundamental React hook used to manage and update the state of a component. In React, components can have their own internal state that determines how they render and behave. The useState hook allows you to declare state variables within a component, and it provides a way to both initialize and update them. By using this hook, you can make your components interactive and dynamic by changing their state in response to user actions or other triggers
 
-useEffect - a React hook that is often used for API calls - you are able to control when this hook is called through dependencies
+useEffect is a crucial React hook primarily utilized for tasks like making API calls. It enables you to manage side effects in functional components. Side effects can include data fetching, subscriptions, or manually changing the DOM. By specifying dependencies, you have control over when the useEffect hook is triggered. This ensures that the side effects are executed at the appropriate times, such as when certain values change within your component.
 
-useReducer - 
-useContext - 
-useRef - 
+useReducer is a React hook that provides an alternative way to manage state within functional components. It's particularly useful when the state logic involves complex transitions or when the state depends on previous values - such as managing multiple state values that often change together, like in a shopping cart scenario. Instead of using multiple useState calls for different pieces of state, you can use useReducer to manage a single state object and define how state updates should occur based on dispatched actions. This hook takes in a reducer function and an initial state, returning the current state and a dispatch function to trigger state updates through defined actions.
+
+useContext is a React hook that facilitates the consumption of context within functional components. Context in React is a mechanism for passing data down the component tree without the need to explicitly pass props at every level. The primary purpose of useContext is to eliminate the need for manually passing props between intermediate or deeply nested child components in order to share certain data or state. Instead of passing the data through multiple levels of components as props, you can use the useContext hook to directly access the data from a context provider at any level of the component tree. useContext allows you to access the current value of a context directly within a component, making it easier to share data that is relevant to a specific portion of your application without prop drilling (where props are passed through multiple levels of components). This hook takes a context object created by the React.createContext function and returns the current context value.
+
+useRef is a React hook that provides a way to create a mutable (when something is mutable, it can be modified or mutated after it's been created) reference that persists across renders of a functional component. Unlike state variables, changes to the value stored in a useRef do not cause the component to re-render. It's commonly used to store references to DOM elements or to maintain values that need to persist between renders without triggering re-renders (for example, focusing on inputs or maintaining a total count during re-renders). Additionally, useRef can be used to access the current value of a prop or state within closures without causing re-renders. It's important to note that while useRef can modify its value without causing re-renders, it doesn't automatically trigger updates to the component when its value changes.
 
 ![alt text](https://github.com/biggie9925/react-simple-login/blob/main/screenshots/1.jpg?raw=true)
 ![alt text](https://github.com/biggie9925/react-simple-login/blob/main/screenshots/2.jpg?raw=true)
